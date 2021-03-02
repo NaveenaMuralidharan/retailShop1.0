@@ -1,0 +1,24 @@
+
+<div class="container">
+    <table class="table table-border">
+      <thead>
+      <tr>
+        <th>ProductName</th>
+        <th>ProductId</th>
+        <th>AvailableQuantity</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let i of customerProducts;let each = index">
+          <ng-template [ngIf]="i.productName!=null&&i.productName!=''&&i.availableQuantity>=1">
+              <td>{{i.productName}}</td>
+              <td>{{i.productId}}</td>
+              <td>{{i.availableQuantity}}</td>
+
+              <td><a [routerLink]="['/order-list',each]" routerLinkActive="active">ORDER</a></td>
+          </ng-template>
+        
+      </tr>
+      </tbody>
+    </table>
+  </div>

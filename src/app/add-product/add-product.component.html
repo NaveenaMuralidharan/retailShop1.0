@@ -1,0 +1,13 @@
+<div class = "container">
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate  >
+        <label for="productName">Product name:</label><br>
+        <input type="text" id="productName" name="productName" ngModel><br>
+        <label for="availableQuantity">Quantity:</label><br>
+        <input type="number" id="availableQuantity" name="availableQuantity" ngModel><br><br>
+    
+        
+        <input type="submit" value="Submit">
+    </form> 
+
+</div>
+
