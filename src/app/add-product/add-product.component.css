@@ -1,14 +1,15 @@
 
-
-input[type=text], select {
+ input[type=text], select {
     width: 50%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid rgb(204, 204, 204);
-    border-radius: 4px;
+    border-radius: 20px;
     box-sizing: border-box;
     background-color:white;
+    font-size: 20px;
+    font-style: italic;
 
   }
   input[type=number], select {
@@ -17,10 +18,17 @@ input[type=text], select {
     margin: 8px 0;
     display: inline-block;
     border: 1px solid rgb(204, 204, 204);
-    border-radius: 4px;
+    border-radius: 20px;
     box-sizing: border-box;
     background-color: white;
+    font-size: 20px;
+    font-style: italic;
 
+  }
+  .input-label {
+      font-size: 20px;
+      font-weight: bold;
+      font-style: oblique;
   }
   /* .label {
     color: white;
@@ -28,11 +36,11 @@ input[type=text], select {
   }
   
   .Productname {background-color: gray;} /* Gray */
-  /* .Quantity {background-color: gray;} Gray */ */
+  /* .Quantity {background-color: gray;} Gray */ 
   
   
   
-  input[type=submit] {
+   input[type=submit] {
     width: 50%;
     background-color: black;
     color: white;
@@ -41,13 +49,22 @@ input[type=text], select {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-style: oblique;
   }
   
-  input[type=submit]:hover {
+  input[type=submit] {
     background-color: #45a049;
-  }
+    margin-left: 200px;
+    font-size: 20px;
+    
+  } 
+  
+ 
+
+
  .container{
      width:40%;
      margin:20% auto ;
+     background-color:burlywood;
      
- }
+ } 

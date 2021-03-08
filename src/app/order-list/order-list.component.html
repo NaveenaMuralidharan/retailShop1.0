@@ -4,7 +4,7 @@
     <table class="table table-border">
       <thead>
       <tr>
-        <th>ProductID</th>
+        <!-- <th>ProductID</th> -->
         <th>ProductName</th>
         <th>AvailableQuantity</th>
       </tr>
@@ -12,29 +12,34 @@
       <tbody>
       <tr >
           
-              <td>{{itemList[index].productId}}</td>
-              <td>{{itemList[index].productName}}</td>
-              <td>{{itemList[index].availableQuantity}}</td>
+              <!-- <td>{{itemList[index].productId}}</td> -->
+              <td>{{product.productName}}</td>
+              <td>{{product.availableQuantity}}</td>
 
         
       </tr>
       </tbody>
     </table>
   </div>
-<br>
-<br>
-<br>
-<br>
+
 <div class ="contain">
 
 
 <form #f="ngForm" (ngSubmit)="onSubmit(f)" ngNativeValidate  >
-    <label for="productName">Product name:</label>
-    <label for="productName">{{itemList[index].productName}}</label><br>
+    <label for="productName" class="label-input">Product name:  </label>
+    <label for="productName" class="label-input">{{product.productName}}</label><br><br>
 
-    <label for="availableQuantity">Quantity:</label>
-    <input type="number" id="availableQuantity" name="availableQuantity" min="1" [max]="itemList[index].availableQuantity" ngModel required><br><br>
+    <label for="availableQuantity" class="label-input">Quantity:  </label>
+    <input type="number" id="availableQuantity" name="availableQuantity" min="1" (keyup)="valqty(product.availableQuantity)" [(ngModel)]="validvalue" [max]="product.availableQuantity"
+    
+    
+    
+    
+    
+    
+    
+    ngModel required><br><br>
 
-    <input type="submit" value="Submit">
+    <input type="submit" value="Order">
 </form> 
 </div>
