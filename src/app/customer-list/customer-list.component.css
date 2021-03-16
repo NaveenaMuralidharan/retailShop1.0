@@ -1,5 +1,5 @@
 
-table {
+/* table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
@@ -9,4 +9,27 @@ td, th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
+} */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    padding: 20px;
+    align-self:center;
+    margin: 0 auto;
+
 }
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+
+}
+.table-div{
+    color: black;
+  }
+  .container{
+    background-color: rgb(150, 127, 99);
+  }
+ 

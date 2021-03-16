@@ -22,10 +22,10 @@ body{
     font-family: montserrat;
 }
 nav{
-    background: #0082e6;
+    background:black;
     height:50px;
-    width:100%;
     padding:15px;
+    border-radius: 10px;
 }
 nav ul{
     float: right;
@@ -43,7 +43,7 @@ nav ul li a{
     text-transform: uppercase;
 }
 a:hover{
-    background: #1b9bff;
+    background: rgb(65, 63, 63);
     transition: .5s;
 }
 .checkbtn{

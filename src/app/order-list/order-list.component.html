@@ -3,14 +3,14 @@
 <div class="container">
     <table class="table table-border">
       <thead>
-      <tr>
+      <tr class="table-div">
         <!-- <th>ProductID</th> -->
         <th>ProductName</th>
-        <th>AvailableQuantity</th>
+        <th >AvailableQuantity</th>
       </tr>
       </thead>
       <tbody>
-      <tr >
+      <tr class="table-div" >
           
               <!-- <td>{{itemList[index].productId}}</td> -->
               <td>{{product.productName}}</td>
@@ -21,16 +21,19 @@
       </tbody>
     </table>
   </div>
+  <br>
+  <br>
+  <br>
+  <br>
 
-<div class ="contain">
+<div class ="box">
+  <div class="custom-div">
 
 
 <form #f="ngForm" (ngSubmit)="onSubmit(f)" ngNativeValidate  >
     <label for="productName" class="label-input">Product name:  </label>
     <label for="productName" class="label-input">{{product.productName}}</label><br><br>
-
-    <label for="availableQuantity" class="label-input">Quantity:  </label>
-    <input type="number" id="availableQuantity" name="availableQuantity" min="1" (keyup)="valqty(product.availableQuantity)" [(ngModel)]="validvalue" [max]="product.availableQuantity"
+    <input class="inputText" type="number" id="availableQuantity" name="availableQuantity" placeholder="Enter product quantity" min="1" (keyup)="valqty(product.availableQuantity)" [(ngModel)]="validvalue" [max]="product.availableQuantity"
     
     
     
@@ -40,6 +43,9 @@
     
     ngModel required><br><br>
 
-    <input type="submit" value="Order">
+    <input class="submitText" type="submit" value="Order">
+    
+  
 </form> 
+</div>
 </div>

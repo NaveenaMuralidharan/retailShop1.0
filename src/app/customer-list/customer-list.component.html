@@ -2,14 +2,14 @@
 <div class="container">
     <table class="table table-border">
       <thead>
-      <tr>
+      <tr class="table-div">
         <th>ProductName</th>
         <!-- <th>ProductID</th> -->
         <th>AvailableQuantity</th>
       </tr>
       </thead>
       <tbody>
-      <tr *ngFor="let i of customerProducts;">
+      <tr class="table-div" *ngFor="let i of customerProducts;">
           <ng-template [ngIf]="i.productName!=null&&i.productName!=''&&i.availableQuantity>=1">
               <td>{{i.productName}}</td>
               <!-- <td>{{i.productId}}</td> -->

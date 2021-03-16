@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { CustomerList} from './customer-list/customer-list.component';
 import {environment} from '../environments/environment.prod'
 
-const orderUrl = environment.productUrl+"/orderProducts";
+const orderUrl = environment.productUrl+"/order";
 
 const url = environment.productUrl+"/product"
 
@@ -26,6 +26,7 @@ export class OrdersService {
   }
   
   orderProduct(data): Observable<any> {
+    console.log(orderUrl)
     return this.http.post(orderUrl, data)
   }
 }

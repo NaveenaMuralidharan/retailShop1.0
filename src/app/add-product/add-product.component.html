@@ -1,13 +1,9 @@
-<div class = "container">
-    <form #f="ngForm" (ngSubmit)="onSubmit(f)" ngNativeValidate  >
-        <label for="productName" class="input-label" required>Product name:</label><br>
-        <input type="text" id="productName" name="productName" [ngModel]="productName" (ngModelChange)="validName($event)" ngModel required><br>
-        <label for="availableQuantity" class="input-label" required>Quantity:</label><br>
-        <input type="number" id="availableQuantity"  name="availableQuantity" [ngModel]="itemQuantity" (ngModelChange)="validValue($event)" ngModel required><br><br>
-    
-        
-        <input type="submit" value="Insert">
-    </form> 
-
+<div class="box">
+    <div class = "custom-div">
+        <input class="inputText" placeholder="Enter product name" type="text" [ngModel]="productName" (ngModelChange)="validName($event)" ngModel required>
+        <input class="inputText" type="number" placeholder="Enter product quantity" [ngModel]="itemQuantity" (ngModelChange)="validValue($event)" ngModel required>
+        <input class="submitText" value="INSERT" (click)="onSubmit()"> 
+    </div>
 </div>
+
 
