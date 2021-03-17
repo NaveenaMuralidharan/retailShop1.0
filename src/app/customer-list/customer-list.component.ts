@@ -35,6 +35,7 @@ export class CustomerListComponent implements OnInit {
   ngOnInit(): void {
     this.product_Data.getData().subscribe(result => {console.log(result);
       this.customerProducts=result
+      console.log(this.customerProducts)
     })
   }
 
