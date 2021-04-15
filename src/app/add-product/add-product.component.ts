@@ -29,6 +29,7 @@ export class AddProductComponent implements OnInit {
         (result) => {
           // alert("Product Added");
           swal.fire("Product Added:)");
+          
           //f.reset()
         },
         (error) => {
