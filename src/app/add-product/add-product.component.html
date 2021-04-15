@@ -1,7 +1,7 @@
 <div class="box">
     <div class = "custom-div">
         <input class="inputText" placeholder="Enter product name" type="text" [ngModel]="productName" (ngModelChange)="validName($event)" ngModel required>
-        <input class="inputText" type="number" placeholder="Enter product quantity" [ngModel]="itemQuantity" (ngModelChange)="validValue($event)" ngModel required>
+        <input class="inputText" type="number" placeholder="Enter product quantities" [ngModel]="itemQuantity" (ngModelChange)="validValue($event)" ngModel required>
         <input class="submitText" value="INSERT" (click)="onSubmit()"> 
     </div>
 </div>
